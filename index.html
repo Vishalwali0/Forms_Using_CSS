@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+
+
+    <style>
+        body{
+            background: #3F5EFB;
+            background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+
+        }
+        fieldset{
+            width: 650px;
+            border: 5px solid black;
+            border-radius: 25px;
+        }
+
+        input:required{
+            border: 5px solid rgb(255, 85, 144);
+        }
+
+        input[readonly]{
+            background-color: rgb(243, 108, 160);
+            color: black;
+            font-weight: 900;
+        }
+
+        select{
+            background-color: rgb(243, 108, 160);
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:checked{
+            height: 19px;
+            width: 19px;
+        }
+
+        input[type="radio"]:checked + label{
+            color: aqua;
+            font-size: 19px;
+        }
+
+        p{
+            display: none;
+        }
+        input:hover + p{
+            display: inline;
+            color: orange;
+            background-color: wheat;
+        }
+
+        input:focus{
+            background-color: red;
+            color: wheat;
+            font-weight: 800;
+        }
+
+
+
+        
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>COURSE REGISTER FORM</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>
+                PERSONAL DETAILS
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="">NAME</label>
+                    </td>
+                    <td>
+                        <input type="text" name="FN" placeholder="Ex:vishal" required >
+                        <p>Enter Your Name</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">SURNAME</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Ex:W" required>
+                        <P>Enter your Surname</P>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">MOBILE NO</label>
+                    </td>
+                    <td>
+                        <input type="tel" placeholder="Ex:0000-00-0000-00" required>
+                        <p>Enter Your Phone Number</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Ex:name@gmail.com" required>
+                        <P>Enter Your Email</P>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">PASSWORD</label>
+                    </td>
+                    <td>
+                        <input type="password" required>
+                        <p>Enter Password</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">CONFORM PASSWORD</label>
+                    </td>
+                    <td>
+                        <input type="password" required>
+                        <p>Enter Conform Password</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">DOB</label>
+                        
+                    </td>
+                    <td>
+                        <input type="date" placeholder="MM-DD-YYYY" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">GENDER</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="GENDER" value="m"><label for="">male</label>
+                        <input type="radio" name="GENDER" value="f"><label for="">female</label>
+                        <input type="radio" name="GENDER" value="o"><label for="">others</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">SELECT COUNTRY</label>
+                    </td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">INDIA</option>
+                            <option value="">USA</option>
+                            <option value="">UK</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">UPLOAD IMAGE</label>
+                    </td>
+                    <td>
+                        <input type="file">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="reset">
+                    </td>
+                </tr>
+
+
+
+            </table>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>
+                COURSE DETAILS
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="">SELECT COURSE</label>
+                    </td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">JAVA</option>
+                            <option value="">PYTHON</option>
+                            <option value="">HTML AND CSS</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">DELIVERY MODE</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="DELIVERY MODE" value="m"><label for="">ONLINE</label>
+                        <input type="radio" name="DELIVERY MODE" value="f"><label for="">OFFLINE</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">INSTITUTE NAME</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="VTU" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">COMMENTS</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Ex:Text Area">
+                    </td>
+                </tr>
+
+
+
+
+
+
+
+            </table>
+        </fieldset>
+
+
+
+    </form>
+
+    
+
+
+
+
+
+
+    <button>SUBMIT</button> <br>
+    <button><a href="" class="h">CLICK TO DOWNLOAD</a></button>
+</body>
+</html>
